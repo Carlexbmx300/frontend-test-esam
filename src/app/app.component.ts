@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'frontend-test-esam';
+  title:string = 'Sistema Academico ESAM';
+  footerText:string = '© 2024 ESAM COCHABAMBA SUCURSAL';
 }

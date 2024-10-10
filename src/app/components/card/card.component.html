@@ -1,0 +1,25 @@
+
+<h1>{{title}}</h1>
+<div class="v-container v-locale--is-ltr">
+    <div class="v-row menu-item">
+        <div *ngFor="let item of items" class="v-col-3 ">
+            <button 
+            type="button"
+            class="v-btn v-btn--elevated v-theme--light v-btn--density-default v-btn--variant-elevated button-style"
+            style="height: 300px; width: 300px;">
+                <span
+                class="v-btn__content" data-no-activator>
+                    <i
+                    class="mdi v-icon notranslate v-theme--light"
+                    [ngClass]="item.image"
+                    aria-hidden="true"
+                    style="font-size: 200px; height: 200px; width: 200px;">
+                    </i>
+                    <p class="text-position">
+                        {{item.title}}
+                    </p>
+                </span>
+            </button>
+        </div>
+    </div>
+</div>

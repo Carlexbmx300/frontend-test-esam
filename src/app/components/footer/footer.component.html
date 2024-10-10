@@ -1,0 +1,26 @@
+<footer
+data-v-15925d9e class="v-footer v-theme--light custom-footer"
+style="bottom: 0px; z-index: 1004; transform: translateY(0%); position: fixed; left: 0px; width: calc(100% + 0px);"><div
+
+class="v-container v-container--fluid v-locale--is-ltr">
+    <div class="v-row footer-items">
+        <div class="v-col text-center text-md-left">
+            <a
+            *ngFor="let item of items"
+            class="v-btn v-btn--elevated v-btn--icon v-theme--light bg-white v-btn--density-default v-btn--size-default v-btn--variant-elevated"
+            [href]="item.url">
+                <span
+                    class="v-btn__content">
+                    <i class="mdi v-icon notranslate v-theme--light v-icon--size-default"
+                    [ngClass]="item.icon"
+                    aria-hidden="true">
+                    </i>
+                </span>
+            </a>
+        </div>
+        <div class=" footer-text v-col text-center text-md-right">
+            <span> {{text}}</span>
+        </div>
+    </div>
+</div>
+</footer>
